@@ -1,0 +1,87 @@
+<div id="maindiv" class="panel-main" >
+
+
+      <div class="panel-main__inner panel-inverted">
+        <div class="panel-main__content">
+          
+            <img src="images/profile.jpg" class="user-image" alt="My Profile Photo">
+            <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
+          
+          <hr class="panel-cover__divider">
+          <p class="maxSubTitle panel-cover__description">{{ site.description }}</p>
+          <hr class="panel-cover__divider panel-cover__divider--secondary">
+                  <nav class="cover-navigation cover-navigation--primary">
+              <ul class="navigation">
+                <li id="sidebarbutton" class="navigation__item sidebarbuttontoggle"><button type="button" onclick="showLess()" class="btn btn-secondary book-button sidebarbuttontoggle">Book Now</button></li>
+              </ul>
+        </nav>
+          <div class="navigation-wrapper">
+
+            <nav class="cover-navigation navigation--social">
+            <ul class="navigation">
+          
+            {% if site.author.twitter_username %}
+              <!-- Twitter -->
+              <li class="navigation__item">
+                <a href="http://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
+                  <i class="icon icon-social-twitter"></i>
+                  <span class="label">Twitter</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.facebook_username %}
+              <!-- Facebook -->
+              <li class="navigation__item">
+                <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
+                  <i class="icon icon-social-facebook"></i>
+                  <span class="label">Facebook</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.instagram_username %}
+              <!-- LinkedIn -->
+              <li class="navigation__item">
+                <a href="https://www.instagram.com/{{ site.author.instagram_username }}" title="{{ site.author.instagram_username }} on Instagram" target="_blank">
+                  <i class="icon icon-social-instagram"></i>
+                  <span class="label">LinkedIn</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.github_username %}
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
+                  <i class="icon icon-social-github"></i>
+                  <span class="label">GitHub</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.email %}
+              <!-- Email -->
+              <li class="navigation__item">
+                <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
+                  <i class="icon icon-mail"></i>
+                  <span class="label">Email</span>
+                </a>
+              </li>
+            {% endif %}
+
+            <!-- RSS -->
+
+          
+            </ul>
+            </nav>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="panel-cover--overlay"></div>
+    </div>
+  </header>

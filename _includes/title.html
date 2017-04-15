@@ -1,0 +1,46 @@
+    <div id="maindiv" class="panel-main" >
+
+      <div class="panel-main__inner panel-inverted">
+        <div class="panel-main__content">
+          <!-- About Us Button -->
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li id="sidebarbutton" class="navigation__item sidebarbuttontoggle">
+                <button type="button" onclick="showLess()" class="btn btn-secondary book-button sidebarbuttontoggle btn-orgy">{{ site.data.content.sidebutton }}</button>
+              </li>
+            </ul>
+          </nav>
+          <!-- Logo, subtitles, icons -->
+          <img src="{{ site.data.content.logo }}" class="logo user-image" alt="{{ site.data.content.title }} Picture">
+          <h1 class="panel-cover__title panel-title">{{ site.data.content.title }}</h1>
+
+          <hr class="panel-cover__divider">
+          <p class="maxSubTitle panel-cover__description">{{ site.data.content.description }}</p>
+
+          <div class="navigation-wrapper">
+
+            <nav class="cover-navigation navigation--social">
+              <ul class="navigation">
+                
+                {% for socialicon in site.data.content.socialicons %}
+                <li class="navigation__item">
+                  <a href="{{ socialicon.url }}" title="{{ site.data.title }} on {{ socialicon.name }}" target="_blank" class="greycolor">
+                    <span class="fa-stack fa-lg iconColors">
+                      <i class="fa fa-fw fa-circle-thin fa-stack-2x"></i>
+                      <i class="fa fa-fw {{ socialicon.icon }} fa-stack-1x"></i>
+                    </span>
+                    <span class="label">{{ socialicon.name }}</span>
+                  </a>
+                </li>
+                {% endfor %}
+              </ul>
+            </nav>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="panel-cover--overlay"></div>
+    </div>

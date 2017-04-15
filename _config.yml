@@ -1,0 +1,37 @@
+# Site settings
+url: ''
+baseurl: '/'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Ryan Fabela'
+  email: rfab@ryanfabela.com
+  instagram_username: ryanc.fabela
+  twitter_username: ryancfabela
+  github_username: 01somebody
+
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate', 'jekyll-autolink_email']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']

@@ -1,0 +1,23 @@
+title: Ryan Fabela 
+description: 'Photographer - Coder - Explorer<br>An autodidact, aiming for pantomath-ium.'
+logo: images/profile.jpg #add logo src here
+
+sidebutton: About Me #side button text
+sidetitle: About Me
+sidedescription: View my portfolio to see my style of photography and, if it matches your vision, contact me and we can discuss your ideas. For coding inquires, email me with a description of your problem and what you are looking for and I will respond with a solution and a price.
+
+#social media
+# emails 
+socialicons:
+  - name: Instagram
+    url: https://www.instagram.com/ryanc.fabela
+    icon: fa-instagram #fa-icon-name //font awesome
+  - name: Github
+    url: https://github.com/ryanfabela
+    icon: fa-github #fa-icon-name //font awesome
+  - name: Twitter
+    url: https://twitter.com/ryancfabela
+    icon: fa-twitter #fa-icon-name //font awesome
+  - name: Email
+    url: rfab@ryanfabela.com
+    icon: fa-envelope #fa-icon-name //font awesome

@@ -1,0 +1,48 @@
+---
+---
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>{{ site.data.content.title }}</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/slidebars.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="canonical">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.sublimeSlideshow.js"></script>
+  <script type="text/javascript" src="js/slidebars.min.js"></script>
+</head>
+
+
+<body>
+
+  <span class="mobile btn-mobile-menu">
+  <i class="icon icon-list btn-mobile-menu__icon"></i>
+  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+</span>
+
+  <header canvas="container" class="panel-cover">
+
+    {% include title.html %}
+  </header>
+
+
+    {% include about.html %}
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="js/slidebarsmain.js"></script>
+    <script type="text/javascript" src="js/imagefade.js"></script>
+
+  </body>
+
+</html>
