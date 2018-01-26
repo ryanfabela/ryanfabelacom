@@ -1,37 +1,31 @@
-
-
 @import url(uno.css);
 @import url(monokai.css);
-.iconColors
-{
-	color: #ffffff;
-	margin: 5px;
-	
+.iconColors {
+    color: #ffffff;
+    margin: 5px;
 }
 fadein {
-    position:relative;
-	display: block;
+    position: relative;
+    display: block;
 }
 
 .fadein img {
-    position:absolute;
-    left:0;
-    top:0;
-		display: block;
-	max-width: none;
-	width:100vw;
-	overflow:hidden;
-	max-height: 100vh;
-	background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    max-width: none;
+    width: 100vw;
+    overflow: hidden;
+    max-height: 100vh;
+    background-size: cover;
 }
 
-
-i#arrowbutton
-{
-	color: #000;
-	font-size: 36px;
-	margin-left: -30px;
-	position: absolute;
+i#arrowbutton {
+    color: #000;
+    font-size: 36px;
+    margin-left: -30px;
+    position: absolute;
     top: 15px;
     left: 50px;
 }
@@ -45,9 +39,7 @@ i#arrowbutton
 
 /* Styles for the alternating / transition effect. */
 .toggle-image {
-
 }
-
 
 /* Background image URLs and "stack" order. */
 .first-image {
@@ -80,63 +72,58 @@ third-image.show {
     opacity: 100;
 }
 
-.book-button
-{
-	top: 15px;
-	right: 15px;
-	position: fixed;
-	    color: #fae3df;
+.book-button {
+    top: 15px;
+    right: 15px;
+    position: fixed;
+    color: #fae3df;
     background: none;
     border-color: #fae3df;
 }
-.book-button:hover
-{
-	color: #fff;
+.book-button:hover {
+    color: #fff;
     border-color: #fff;
 }
-
-
-
 
 /* Modifications */
 
 pre.highlight,
 .highlight pre {
-  padding: 10px;
+    padding: 10px;
 }
 
 pre.highlight code,
 .highlight pre code {
-  white-space: pre-wrap;
+    white-space: pre-wrap;
 }
 
 .btn,
 .navigation__item a {
-  margin: 5px 0;
-  white-space: nowrap;
+    margin: 5px 0;
+    white-space: nowrap;
 }
 
 .pagination__page-number {
-  display: inline-block;
-  padding: 10px;
+    display: inline-block;
+    padding: 10px;
 }
 
 .categories a,
 .tags a {
-  border: 1px solid #e25440;
-  border-radius: 20px;
-  color: #e25440;
-  display: inline-block;
-  font-size: 12px;
-  margin: 5px 0;
-  padding: 5px 10px;
-  text-shadow: none;
-  white-space: nowrap;
+    border: 1px solid #e25440;
+    border-radius: 20px;
+    color: #e25440;
+    display: inline-block;
+    font-size: 12px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    text-shadow: none;
+    white-space: nowrap;
 }
 
 .post-meta__tags {
-  font-size: 12px;
-  padding: 0 5px;
+    font-size: 12px;
+    padding: 0 5px;
 }
 
 .footer__copyright {
@@ -144,151 +131,148 @@ pre.highlight code,
 }
 
 .user-image {
-  margin-bottom: 0em;
-  position: relative;
-  width: 150px;
+    margin-bottom: 0em;
+    position: relative;
+    width: 150px;
 }
 
 /* BG */
 
-	#bg {
-		-moz-transition: opacity 2s ease-in-out;
-		-webkit-transition: opacity 2s ease-in-out;
-		-ms-transition: opacity 2s ease-in-out;
-		transition: opacity 2s ease-in-out;
-		height: 100%;
-		left: 0;
-		position: fixed;
-		top: 0;
-		width: 100%;
-		z-index: 0;
-	}
+#bg {
+    -moz-transition: opacity 2s ease-in-out;
+    -webkit-transition: opacity 2s ease-in-out;
+    -ms-transition: opacity 2s ease-in-out;
+    transition: opacity 2s ease-in-out;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
 
-		#bg div {
-			-moz-transition: opacity 3s ease, visibility 3s;
-			-webkit-transition: opacity 3s ease, visibility 3s;
-			-ms-transition: opacity 3s ease, visibility 3s;
-			transition: opacity 3s ease, visibility 3s;
-			background-size: cover;
-			height: 100%;
-			left: 0;
-			opacity: 0;
-			position: absolute;
-			top: 0;
-			visibility: hidden;
-			width: 120%;
-		}
+#bg div {
+    -moz-transition: opacity 3s ease, visibility 3s;
+    -webkit-transition: opacity 3s ease, visibility 3s;
+    -ms-transition: opacity 3s ease, visibility 3s;
+    transition: opacity 3s ease, visibility 3s;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    width: 120%;
+}
 
-			#bg div.visible {
-				-moz-animation: bg 45s linear infinite;
-				-webkit-animation: bg 45s linear infinite;
-				-ms-animation: bg 45s linear infinite;
-				animation: bg 45s linear infinite;
-				opacity: 1;
-				visibility: visible;
-				z-index: 0;
-			}
+#bg div.visible {
+    -moz-animation: bg 45s linear infinite;
+    -webkit-animation: bg 45s linear infinite;
+    -ms-animation: bg 45s linear infinite;
+    animation: bg 45s linear infinite;
+    opacity: 1;
+    visibility: visible;
+    z-index: 0;
+}
 
-				#bg div.visible.top {
-					z-index: 1;
-				}
+#bg div.visible.top {
+    z-index: 1;
+}
 
-				@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
+    #bg div.visible {
+        -moz-animation: bg 29.25s linear infinite;
+        -webkit-animation: bg 29.25s linear infinite;
+        -ms-animation: bg 29.25s linear infinite;
+        animation: bg 29.25s linear infinite;
+    }
+}
 
-					#bg div.visible {
-						-moz-animation: bg 29.25s linear infinite;
-						-webkit-animation: bg 29.25s linear infinite;
-						-ms-animation: bg 29.25s linear infinite;
-						animation: bg 29.25s linear infinite;
-					}
+@media screen and (max-width: 736px) {
+    section.post,
+    header.post {
+        text-align: center;
+    }
+    #bg div.visible {
+        -moz-animation: bg 18s linear infinite;
+        -webkit-animation: bg 18s linear infinite;
+        -ms-animation: bg 18s linear infinite;
+        animation: bg 18s linear infinite;
+    }
+}
 
-				}
+#bg div:only-child {
+    -moz-animation-direction: alternate !important;
+    -webkit-animation-direction: alternate !important;
+    -ms-animation-direction: alternate !important;
+    animation-direction: alternate !important;
+}
 
-				@media screen and (max-width: 736px) {
+body.is-loading #bg {
+    opacity: 0;
+}
 
-          section.post, header.post {
-            text-align:center;
-          }
-					#bg div.visible {
-						-moz-animation: bg 18s linear infinite;
-						-webkit-animation: bg 18s linear infinite;
-						-ms-animation: bg 18s linear infinite;
-						animation: bg 18s linear infinite;
-					}
+@-moz-keyframes bg {
+    0% {
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
 
-				}
+    100% {
+        -moz-transform: translateX(-25%);
+        -webkit-transform: translateX(-25%);
+        -ms-transform: translateX(-25%);
+        transform: translateX(-25%);
+    }
+}
 
-			#bg div:only-child {
-				-moz-animation-direction: alternate !important;
-				-webkit-animation-direction: alternate !important;
-				-ms-animation-direction: alternate !important;
-				animation-direction: alternate !important;
-			}
+@-webkit-keyframes bg {
+    0% {
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
 
-		body.is-loading #bg {
-			opacity: 0;
-		}
+    100% {
+        -moz-transform: translateX(-25%);
+        -webkit-transform: translateX(-25%);
+        -ms-transform: translateX(-25%);
+        transform: translateX(-25%);
+    }
+}
 
-	@-moz-keyframes bg {
-		0% {
-			-moz-transform: translateX(0);
-			-webkit-transform: translateX(0);
-			-ms-transform: translateX(0);
-			transform: translateX(0);
-		}
+@-ms-keyframes bg {
+    0% {
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
 
-		100% {
-			-moz-transform: translateX(-25%);
-			-webkit-transform: translateX(-25%);
-			-ms-transform: translateX(-25%);
-			transform: translateX(-25%);
-		}
-	}
+    100% {
+        -moz-transform: translateX(-25%);
+        -webkit-transform: translateX(-25%);
+        -ms-transform: translateX(-25%);
+        transform: translateX(-25%);
+    }
+}
 
-	@-webkit-keyframes bg {
-		0% {
-			-moz-transform: translateX(0);
-			-webkit-transform: translateX(0);
-			-ms-transform: translateX(0);
-			transform: translateX(0);
-		}
+@keyframes bg {
+    0% {
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
 
-		100% {
-			-moz-transform: translateX(-25%);
-			-webkit-transform: translateX(-25%);
-			-ms-transform: translateX(-25%);
-			transform: translateX(-25%);
-		}
-	}
-
-	@-ms-keyframes bg {
-		0% {
-			-moz-transform: translateX(0);
-			-webkit-transform: translateX(0);
-			-ms-transform: translateX(0);
-			transform: translateX(0);
-		}
-
-		100% {
-			-moz-transform: translateX(-25%);
-			-webkit-transform: translateX(-25%);
-			-ms-transform: translateX(-25%);
-			transform: translateX(-25%);
-		}
-	}
-
-	@keyframes bg {
-		0% {
-			-moz-transform: translateX(0);
-			-webkit-transform: translateX(0);
-			-ms-transform: translateX(0);
-			transform: translateX(0);
-		}
-
-		100% {
-			-moz-transform: translateX(-25%);
-			-webkit-transform: translateX(-25%);
-			-ms-transform: translateX(-25%);
-			transform: translateX(-25%);
-		}
-	}
+    100% {
+        -moz-transform: translateX(-25%);
+        -webkit-transform: translateX(-25%);
+        -ms-transform: translateX(-25%);
+        transform: translateX(-25%);
+    }
+}
