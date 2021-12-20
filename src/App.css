@@ -1,3 +1,6 @@
+:root {
+   --app-height: 100vh;
+}
 /*============================================================
 [Master Stylesheet]
 Theme Name:     Tumho
@@ -152,6 +155,10 @@ button:focus {
 @media (max-width: 767px) {
   .box-style {
     padding: 0 10px;
+  }
+  .hero-slider-wrapper:before,
+  .hero-slider-wrapper:after {
+    display: none;
   }
 }
 
@@ -1008,6 +1015,7 @@ button:focus {
 .hero {
   position: relative;
   height: 100vh;
+  height: var(--app-height);
 }
 
 @media (max-width: 767px) {
@@ -1018,6 +1026,7 @@ button:focus {
 
 .hero .slide {
   height: 100vh;
+  height: var(--app-height);
   position: relative;
   background-repeat: no-repeat;
   position: relative;
@@ -1135,12 +1144,6 @@ button:focus {
   }
 }
 
-@media (max-width: 850px) {
-  .hero .social-links {
-    display: none;
-  }
-}
-
 .hero .social-links:before {
   content: "";
   width: 1px;
@@ -1180,6 +1183,16 @@ button:focus {
 
 .hero .social-links li a:hover {
   color: #ddd;
+}
+
+@media (max-width: 850px) {
+  .hero .social-links {
+    /* display: none; */
+  }
+  .hero .social-links li a {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
 }
 
 .hero .slide-caption > div {
@@ -1240,12 +1253,14 @@ button:focus {
 
 .hero-style-1{
   height: 100vh;
+  height: var(--app-height);
   /* min-height: 850px; */
 }
 
 
 .hero-style-1 .slide {
   height:100vh;
+  height: var(--app-height);
   /* min-height: 850px; */
 }
 

@@ -14,6 +14,14 @@ import './App.css';
 import './Assets/Css/Responsive.css';
 
 function App() {
+    React.useLayoutEffect(() => {
+        const appHeight = () => {
+          const doc = document.documentElement;
+          doc.style.setProperty("--app-height", `${window.innerHeight}px`);
+        };
+        window.addEventListener("resize", appHeight);
+        appHeight();
+    })
     return (
         <div className="App">
             {/* <Navbar /> */}
