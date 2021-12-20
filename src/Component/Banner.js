@@ -23,7 +23,8 @@ class Banner extends Component {
                       </div>
                       <div className="btns">
                         <a
-                          href="#contact"
+                          href="mailto:rfab@ryanfabela.com"
+                          target="_blank"
                           className="theme-btn go-contact-area"
                         >
                           Contact Me
