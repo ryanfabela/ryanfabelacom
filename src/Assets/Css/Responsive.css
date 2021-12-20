@@ -5,10 +5,7 @@
     .hx-about-style-1 .hx-about-img {
         display: none;
     }
-    .hero-style-1 .slide {
-        height: auto;
-        min-height: auto;
-    }
+
     .hero-style-1 {
         height: auto;
         min-height: auto;
@@ -35,10 +32,7 @@
     .price-item {
         overflow: hidden;
     }
-    .hero-style-1 .slide, .hero-style-1 {
-        height: auto;
-        min-height: auto;
-    }
+  
     .hero .slide-caption {
         padding-top: 90px;
         padding-bottom: 90px;
@@ -54,7 +48,8 @@
         display: none;
     }
     .hero-style-1 .slide {
-        background: url('../Images/slide-2.jpg') 20% center no-repeat;
+        background: url('../Images/slide-23.jpg') 20% center no-repeat;
+        filter: grayscale(100%);
         background-size: cover;
     }
     .header-style-1 .navbar-header button {
@@ -152,10 +147,7 @@
     .price-item {
         overflow: hidden;
     }
-    .hero-style-1 .slide, .hero-style-1 {
-        height: auto;
-        min-height: auto;
-    }
+ 
     .hero .slide-caption {
         padding-top: 90px;
         padding-bottom: 90px;
@@ -171,7 +163,8 @@
         display: none;
     }
     .hero-style-1 .slide {
-        background: url('../Images/slide-2.jpg') 20% center no-repeat;
+        background: url('../Images/slide-23.jpg') 20% center no-repeat;
+        filter: grayscale(100%);
         background-size: cover;
     }
     .header-style-1 .navbar-header button {
@@ -253,10 +246,7 @@
     .price-item {
         overflow: hidden;
     }
-    .hero-style-1 .slide, .hero-style-1 {
-        height: auto;
-        min-height: auto;
-    }
+
     .hero .slide-caption {
         padding-top: 90px;
         padding-bottom: 90px;
@@ -272,7 +262,8 @@
         display: none;
     }
     .hero-style-1 .slide {
-        background: url('../Images/slide-2.jpg') 20% center no-repeat;
+        background: url('../Images/slide-23.jpg') 20% center no-repeat;
+        filter: grayscale(100%);
         background-size: cover;
     }
     .header-style-1 .navbar-header button {
